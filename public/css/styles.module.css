@@ -42,19 +42,17 @@
   width: 300px;
   margin: 20px 0; /* Add margin for spacing between sections */
   cursor: pointer;
-  transition: transform 0.2s; /* Add a smooth transition for the zoom effect */
-}
-
-.skillsContent:hover {
-  transform: scale(
-    1.2
-  ); /* Zoom in on hover (adjust the scale factor as needed) */
 }
 
 .skillsContent img {
   width: 150px;
   height: 150px;
   margin-top: 20px;
+  transition: transform 0.2s; /* Add a smooth transition for the zoom effect */
+}
+
+.skillsContent img:hover {
+  transform: scale(1.2); /* Zoom in on hover (adjust the scale factor as needed) */
 }
 
 .skillsContent p {
