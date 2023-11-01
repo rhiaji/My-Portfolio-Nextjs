@@ -1,0 +1,40 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-image: linear-gradient(to left, #858483 0%, #304352 100%);
+  font-family: Helvetica;
+  letter-spacing: 2px;
+  line-height: 25px;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px 0; /* Add margin for spacing between sections */
+  border-top: 2px solid rgb(158, 158, 158);
+  margin-bottom: 100px;
+}
