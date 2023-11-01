@@ -4,6 +4,7 @@ import About from "../../public/components/about";
 import Skills from "../../public/components/skills";
 import Projects from "../../public/components/projects";
 import Contact from "../../public/components/contact";
+import styles from "../../public/css/styles.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -23,7 +24,7 @@ export default function Home() {
     }
 
     const elapsed = timestamp - startTime;
-    const progress = Math.min(elapsed / 500, 1);
+    const progress = Math.min(elapsed / 400, 1);
 
     window.scrollTo(
       0,
@@ -51,11 +52,11 @@ export default function Home() {
 
   return (
     <body>
-      <div className="header">
-        <div className="header-button">
+      <div className={styles.header}>
+        <div className={styles.headerButton}>
           <h3>Dave Mariano</h3>
         </div>
-        <div className="header-button">
+        <div className={styles.headerButton}>
           <button onClick={() => scrollTo(aboutRef)}>
             <h3>About</h3>
           </button>
@@ -65,13 +66,13 @@ export default function Home() {
           <button onClick={() => scrollTo(projectRef)}>
             <h3>Projects</h3>
           </button>
-          <button id="hiremeButton" onClick={() => scrollTo(contactRef)}>
+          <button onClick={() => scrollTo(contactRef)}>
             <h3>Hire Me</h3>
           </button>
         </div>
       </div>
 
-      <div className="container">
+      <div className={styles.container}>
         <About ref={aboutRef} />
         {/* Assign the ref to the Skills component */}
         <Skills ref={skillsRef} />
@@ -79,9 +80,9 @@ export default function Home() {
         <Contact ref={contactRef} />
       </div>
 
-      <div className="footer">
+      <div className={styles.footer}>
         <p>Contact me @ mrdavepmariano@gmail.com</p>
-        <div className="social-links">
+        <div className={styles.socialLinks}>
           <a href="https://www.linkedin.com/in/mrdavepmariano/" target="_blank">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>

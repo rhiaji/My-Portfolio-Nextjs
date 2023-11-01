@@ -1,12 +1,13 @@
 import React from "react";
+import styles from "../../public/css/styles.module.css";
 
 const About = React.forwardRef((props, ref) => {
   return (
     <section ref={ref}>
-      <div className="section-head">
+      <div className={styles.sectionHead}>
         <h2>About Me</h2>
       </div>
-      <div className="section-content">
+      <div className={styles.sectionContent}>
         <div>
           <p>
             Hello, I'm Dave Mariano, a dedicated and self-taught web developer
@@ -32,7 +33,7 @@ const About = React.forwardRef((props, ref) => {
           </p>
         </div>
 
-        <div className="image-container">
+        <div className={styles.imageContainer}>
           <img src="/images/MYPIC.png" />
           Registered Mechanical Engineer
         </div>

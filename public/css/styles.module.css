@@ -6,14 +6,14 @@
   width: 100%;
 }
 
-#hiremeButton {
+.headerButton button:last-child {
   width: 150px;
   border-radius: 20px;
   color: #e05c4b;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
-#hiremeButton:hover {
+.headerButton button:last-child:hover {
   color: #da8638;
   border: 1px solid rgb(226, 175, 64);
 }
@@ -29,21 +29,12 @@
   overflow-y: auto; /* You can adjust this property based on your design */
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: 20px 0; /* Add margin for spacing between sections */
-  border-top: 2px solid rgb(158, 158, 158);
-  margin-bottom: 100px;
-}
-
-.section-content {
+.sectionContent {
   display: flex;
   justify-content: center;
 }
 
-.skills-content {
+.skillsContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,19 +45,19 @@ section {
   transition: transform 0.2s; /* Add a smooth transition for the zoom effect */
 }
 
-.skills-content:hover {
+.skillsContent:hover {
   transform: scale(
     1.2
   ); /* Zoom in on hover (adjust the scale factor as needed) */
 }
 
-.skills-content img {
+.skillsContent img {
   width: 150px;
   height: 150px;
   margin-top: 20px;
 }
 
-.skills-content p {
+.skillsContent p {
   font-size: 15px;
   margin: 10px;
 }
@@ -77,60 +68,60 @@ section {
   justify-content: space-evenly;
 }
 
-.section-project {
+.sectionProject {
   display: flex;
   flex-direction: column;
 }
 
-.project-container {
+.projectContainer {
   display: flex;
 }
 
-.project-container img {
+.projectContainer img {
   width: 500px;
   height: 250px;
   margin: 20px;
 }
 
-.project-content {
+.projectContent {
   display: flex;
   flex-direction: column;
   font-size: 15px;
 }
 
-.project-content ul {
+.projectContent ul {
   margin: 0;
 }
 
-.project-content h2 {
+.projectContent h2 {
   margin-bottom: 0;
   transition: 0.2s ease;
   color: white;
 }
 
-.project-content h2:hover {
+.projectContent h2:hover {
   cursor: pointer;
   color: #96a9b8;
 }
 
-.project-content img:hover {
+.projectContent img:hover {
   cursor: pointer;
 }
 
-.hireme-container {
+.hiremeContainer {
   display: flex;
   flex-direction: column;
   margin: 20px;
 }
 
-.header-button {
+.headerButton {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.header-button button {
+.headerButton button {
   background-color: transparent;
   color: #ffffff;
   letter-spacing: 2px; /* You can adjust the value to your preference */
@@ -141,11 +132,11 @@ section {
   transition: 0.4s ease;
 }
 
-.header-button button:hover {
+.headerButton button:hover {
   color: rgb(48, 160, 252);
 }
 
-.image-container {
+.imageContainer {
   display: block;
   text-align: center;
   justify-content: center;
@@ -154,7 +145,7 @@ section {
   font-size: 15px;
 }
 
-.image-container img {
+.imageContainer img {
   width: 400px;
   border-radius: 50%;
   border: 2px solid rgb(226, 175, 64);
@@ -174,12 +165,12 @@ section {
 }
 
 /* CSS for social links */
-.social-links {
+.socialLinks {
   display: flex; /* Display links horizontally */
   align-items: center; /* Align items vertically in the center */
 }
 
-.social-links a {
+.socialLinks a {
   text-decoration: none;
   color: #333;
   margin: 10px;
@@ -187,14 +178,14 @@ section {
   transition: color 0.3s; /* Apply transition to all links */
 }
 
-.social-links a i {
+.socialLinks a i {
   transition: color 0.3s; /* Add a color transition on hover */
 }
 
-.social-links a:hover {
+.socialLinks a:hover {
   color: #00a6ff; /* Change color on hover (LinkedIn) */
 }
 
-.social-links a:last-child:hover {
+.socialLinks a:last-child:hover {
   color: #ffffff; /* Change color on hover (GitHub) for the last link */
 }

@@ -1,14 +1,15 @@
 import React from "react";
+import styles from "../../public/css/styles.module.css";
 
 const skills = React.forwardRef((props, ref) => {
   return (
     <section ref={ref}>
-      <div className="section-header">
+      <div className={styles.sectionHeader}>
         <h2>Skills</h2>
       </div>
-      <div className="section-content">
-        <div className="row">
-          <div className="skills-content">
+      <div className={styles.sectionContent}>
+        <div className={styles.row}>
+          <div className={styles.skillsContent}>
             <img src="./images/JAVASCRIPT-LOGO.png" />
             <h4>JavaScript:</h4>
             <p>
@@ -17,7 +18,7 @@ const skills = React.forwardRef((props, ref) => {
               create features like form validation, animations, and more.
             </p>
           </div>
-          <div className="skills-content">
+          <div className={styles.skillsContent}>
             <img src="./images/CSS-LOGO.png" />
             <h4>CSS:</h4>
             <p>
@@ -26,7 +27,7 @@ const skills = React.forwardRef((props, ref) => {
               visually appealing and user-friendly.
             </p>
           </div>
-          <div className="skills-content">
+          <div className={styles.skillsContent}>
             <img src="./images/HTML-LOGO.png" />
             <h4>HTML:</h4>
             <p>
@@ -34,7 +35,7 @@ const skills = React.forwardRef((props, ref) => {
               and defines elements like headings, paragraphs, links, and images.
             </p>
           </div>
-          <div className="skills-content">
+          <div className={styles.skillsContent}>
             <img src="./images/Firebase-LOGO.png" />
             <h4>Firebase:</h4>
             <p>
@@ -43,7 +44,7 @@ const skills = React.forwardRef((props, ref) => {
               cloud functions to streamline app development.
             </p>
           </div>
-          <div className="skills-content">
+          <div className={styles.skillsContent}>
             <img src="./images/MongoDB-LOGO.png" />
             <h4>MongoDB:</h4>
             <p>
@@ -52,7 +53,7 @@ const skills = React.forwardRef((props, ref) => {
               for its ease of use and adaptability.
             </p>
           </div>
-          <div className="skills-content">
+          <div className={styles.skillsContent}>
             <img src="./images/Express-LOGO.png" />
             <h4>Express.js:</h4>
             <p>
@@ -61,7 +62,7 @@ const skills = React.forwardRef((props, ref) => {
               server side using JavaScript.
             </p>
           </div>
-          <div className="skills-content">
+          <div className={styles.skillsContent}>
             <img src="./images/REACT-LOGO.png" />
             <h4>React:</h4>
             <p>
@@ -70,7 +71,7 @@ const skills = React.forwardRef((props, ref) => {
               and enhances the performance of web applications.
             </p>
           </div>
-          <div className="skills-content">
+          <div className={styles.skillsContent}>
             <img src="./images/NODE-JS-LOGO.png" />
             <h4>Node.js:</h4>
             <p>

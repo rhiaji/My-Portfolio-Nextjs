@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import styles from "../../public/css/styles.module.css";
+import pop from "../../public/css/popup.module.css";
 
 const projects = React.forwardRef((props, ref) => {
   const [show1, setShow1] = useState(false);
@@ -7,10 +9,10 @@ const projects = React.forwardRef((props, ref) => {
   return (
     <section ref={ref}>
       <h2>My Projects</h2>
-      <div className="section-project">
-        <div className="project-container">
+      <div className={styles.sectionProject}>
+        <div className={styles.projectContainer}>
           <img src="./images/autocore.png" />
-          <div className="project-content">
+          <div className={styles.projectContent}>
             <h2 onClick={() => setShow1(true)}>
               <u>Terracore Automation Game</u>
             </h2>
@@ -41,10 +43,10 @@ const projects = React.forwardRef((props, ref) => {
         </div>
 
         <div
-          className="popup-container"
+          className={pop.popupContainer}
           style={{ display: show1 ? "block" : "none" }}
         >
-          <div className="popup-content">
+          <div className={pop.popupContent}>
             <h2>Terracore Automation Game</h2>
             <p>
               <a href="https://autocore-website.vercel.app/" target="_blank">
@@ -136,9 +138,9 @@ const projects = React.forwardRef((props, ref) => {
           </div>
         </div>
 
-        <div className="project-container">
+        <div className={styles.projectContainer}>
           <img src="./images/hiveConnect.png" />
-          <div className="project-content">
+          <div className={styles.projectContent}>
             <h2 onClick={() => setShow2(true)}>
               <u>Website for Hive Blockchain Users</u>
             </h2>
@@ -171,10 +173,10 @@ const projects = React.forwardRef((props, ref) => {
         </div>
 
         <div
-          className="popup-container"
+          className={pop.popupContainer}
           style={{ display: show2 ? "block" : "none" }}
         >
-          <div className="popup-content">
+          <div className={pop.popupContent}>
             <h2>Website for Hive Blockchain Users</h2>
             <p>
               <a href="https://rhiaji-hive-connect.vercel.app/" target="_blank">
@@ -282,9 +284,9 @@ const projects = React.forwardRef((props, ref) => {
             <button onClick={() => setShow2(false)}>Close</button>
           </div>
         </div>
-        <div className="project-container">
+        <div className={styles.projectContainer}>
           <img src="./images/tictactoe.png" />
-          <div className="project-content">
+          <div className={styles.projectContent}>
             <h2 onClick={() => setShow3(true)}>
               <u>Realtime Multiplayer Tic-Tac-Toe</u>
             </h2>
@@ -314,10 +316,10 @@ const projects = React.forwardRef((props, ref) => {
         </div>
 
         <div
-          className="popup-container"
+          className={pop.popupContainer}
           style={{ display: show3 ? "block" : "none" }}
         >
-          <div className="popup-content">
+          <div className={pop.popupContent}>
             <h2>Realtime Multiplayer Tic-Tac-Toe</h2>
             <p>
               <a href="https://rhiaji-tictactoe.vercel.app/" target="_blank">
