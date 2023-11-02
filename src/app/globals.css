@@ -17,8 +17,6 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   color: #ffffff;
   background-image: linear-gradient(to left, #858483 0%, #304352 100%);
   font-family: Helvetica;
