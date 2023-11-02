@@ -89,6 +89,7 @@
 
 .projectContent {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   font-size: 15px;
 }
