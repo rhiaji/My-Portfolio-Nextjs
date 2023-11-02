@@ -32,6 +32,7 @@
 .sectionContent {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .aboutMe {
@@ -82,6 +83,7 @@
 .projectContainer img {
   width: 500px;
   height: 250px;
+  border-radius: 20px;
   margin: 20px;
 }
 
@@ -223,12 +225,16 @@
   }
 
   .skillsContent {
-    width: 100px;
+    width: 150px;
   }
 
   .skillsContent img {
     width: 100px;
     height: 100px;
+  }
+
+  .footer {
+    display: none;
   }
 }
 
@@ -241,7 +247,7 @@
   .imageContainer {
     width: 400px;
     height: 400px;
-    margin-left: 18%;
+    margin-left: 5%;
     order: 1;
   }
 
@@ -269,7 +275,7 @@
 
   .imageContainer {
     order: 1;
-    margin-left: 18%;
+    margin-left: 5%;
   }
 
   .projectContainer {

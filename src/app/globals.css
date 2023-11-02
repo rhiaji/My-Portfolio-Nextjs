@@ -19,6 +19,7 @@ html {
 body {
   color: #ffffff;
   background-image: linear-gradient(to left, #858483 0%, #304352 100%);
+  margin: 0;
   font-family: Helvetica;
   letter-spacing: 2px;
   line-height: 25px;
