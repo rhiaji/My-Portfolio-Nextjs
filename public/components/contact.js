@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "../../public/css/styles.module.css";
+import React from "react"
+import styles from "../../public/css/styles.module.css"
 
 const contact = React.forwardRef((props, ref) => {
   return (
@@ -16,7 +16,7 @@ const contact = React.forwardRef((props, ref) => {
         </p>
       </div>
     </section>
-  );
-});
+  )
+})
 
-export default contact;
+export default contact
