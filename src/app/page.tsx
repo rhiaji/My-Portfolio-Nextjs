@@ -1,52 +1,41 @@
-"use client";
-import React, { useRef, useEffect } from "react";
-import About from "../../public/components/about";
-import Skills from "../../public/components/skills";
-import Projects from "../../public/components/projects";
-import Contact from "../../public/components/contact";
-import styles from "../../public/css/styles.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+"use client"
+import React, {useRef, useEffect} from "react"
+import About from "../../public/components/about"
+import Skills from "../../public/components/skills"
+import Projects from "../../public/components/projects"
+import Contact from "../../public/components/contact"
+import styles from "../../public/css/styles.module.css"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons"
 
 export default function Home() {
-  const aboutRef = useRef(null);
-  const skillsRef = useRef(null);
-  const projectRef = useRef(null);
-  const contactRef = useRef(null);
+  const aboutRef = useRef(null)
+  const skillsRef = useRef(null)
+  const projectRef = useRef(null)
+  const contactRef = useRef(null)
 
-  function scrollStep(
-    timestamp: number,
-    startTime: number | null,
-    targetElement: Element
-  ) {
+  function scrollStep(timestamp: number, startTime: number | null, targetElement: Element) {
     if (startTime === null) {
-      startTime = timestamp;
+      startTime = timestamp
     }
 
-    const elapsed = timestamp - startTime;
-    const progress = Math.min(elapsed / 400, 1);
+    const elapsed = timestamp - startTime
+    const progress = Math.min(elapsed / 400, 1)
 
-    window.scrollTo(
-      0,
-      window.scrollY + targetElement.getBoundingClientRect().top * progress
-    );
+    window.scrollTo(0, window.scrollY + targetElement.getBoundingClientRect().top * progress)
 
     if (progress < 1) {
-      window.requestAnimationFrame((t) =>
-        scrollStep(t, startTime, targetElement)
-      );
+      window.requestAnimationFrame((t) => scrollStep(t, startTime, targetElement))
     }
   }
 
   function scrollTo(targetRef: React.RefObject<HTMLElement>) {
-    const targetElement = targetRef.current;
+    const targetElement = targetRef.current
 
     if (targetElement) {
-      let startTime: number | null = null;
+      let startTime: number | null = null
 
-      window.requestAnimationFrame((timestamp) =>
-        scrollStep(timestamp, startTime, targetElement)
-      );
+      window.requestAnimationFrame((timestamp) => scrollStep(timestamp, startTime, targetElement))
     }
   }
 
@@ -92,5 +81,5 @@ export default function Home() {
         </div>
       </div>
     </body>
-  );
+  )
 }
