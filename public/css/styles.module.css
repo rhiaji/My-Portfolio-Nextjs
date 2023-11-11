@@ -37,6 +37,7 @@
 
 .aboutMe {
   order: 1;
+  font-size: 17px;
 }
 
 .skillsContent {
@@ -184,7 +185,7 @@
   text-decoration: none;
   color: #333;
   margin: 10px;
-  font-size: 24px;
+  font-size: 34px;
   transition: color 0.3s; /* Apply transition to all links */
 }
 

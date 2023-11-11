@@ -5,7 +5,7 @@ const About = React.forwardRef((props, ref) => {
   return (
     <section ref={ref}>
       <div className={styles.sectionHead}>
-        <h2>About Me</h2>
+        <h2>About</h2>
       </div>
       <div className={styles.sectionContent}>
         <div className={styles.aboutMe}>

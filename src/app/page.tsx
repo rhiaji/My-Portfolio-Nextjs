@@ -5,8 +5,6 @@ import Skills from "../../public/components/skills"
 import Projects from "../../public/components/projects"
 import Contact from "../../public/components/contact"
 import styles from "../../public/css/styles.module.css"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons"
 
 export default function Home() {
   const aboutRef = useRef(null)
@@ -67,18 +65,6 @@ export default function Home() {
         <Skills ref={skillsRef} />
         <Projects ref={projectRef} />
         <Contact ref={contactRef} />
-      </div>
-
-      <div className={styles.footer}>
-        <p>Contact me @ mrdavepmariano@gmail.com</p>
-        <div className={styles.socialLinks}>
-          <a href="https://www.linkedin.com/in/mrdavepmariano/" target="_blank">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href="https://github.com/rhiaji" target="_blank">
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-        </div>
       </div>
     </body>
   )

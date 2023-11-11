@@ -8,7 +8,7 @@ const projects = React.forwardRef((props, ref) => {
   const [show3, setShow3] = useState(false)
   return (
     <section ref={ref}>
-      <h2>My Projects</h2>
+      <h2>Projects</h2>
       <div className={styles.sectionProject}>
         <div className={styles.projectContainer}>
           <img src="./images/autocore.png" />
